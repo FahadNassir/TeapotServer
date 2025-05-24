@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(cors());
 
 // Import routes
-const orderRoutes = require('./routes/orderRoutes');
-const history = require('./routes/history');
+const orderRoutes = require('../routes/orderRoutes');
+const history = require('../routes/history');
 
 // Mount routes
 app.use('/', orderRoutes);
