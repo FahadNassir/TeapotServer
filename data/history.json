@@ -1,0 +1,500 @@
+[
+  {
+    "items": [
+      {
+        "name": "Passion juice",
+        "price": "$5.99",
+        "description": "Fresh passion fruit blended with ice and honey",
+        "image": "/images/passion.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:55:29 PM",
+    "total": 8.98,
+    "orderNumber": 1,
+    "deliveryInfo": {
+      "address": "kariakor",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:50:57 PM",
+    "total": 7.98,
+    "orderNumber": 1,
+    "deliveryInfo": {
+      "address": "Makina",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:33:27 PM",
+    "total": 7.98,
+    "orderNumber": 1,
+    "deliveryInfo": {
+      "address": "Makina",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      },
+      {
+        "name": "Orange Juice",
+        "price": "$3.99",
+        "description": "Freshly squeezed orange juice with a touch of honey",
+        "image": "/images/orange.jpg",
+        "category": "Juices",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:24:39 PM",
+    "total": 11.97,
+    "orderNumber": 1,
+    "deliveryInfo": {
+      "address": "Ayany",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Passion Fruit Smoothie",
+        "price": "$5.99",
+        "description": "Fresh passion fruit blended with ice and honey",
+        "image": "/images/passion.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      },
+      {
+        "name": "Apple Cider",
+        "price": "$4.99",
+        "description": "Fresh apple juice with cinnamon and ginger",
+        "image": "/images/apple.jpg",
+        "category": "Juices",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:19:53 PM",
+    "total": 13.97,
+    "orderNumber": 1,
+    "deliveryInfo": {
+      "address": "Makina",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Lassi",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:20:26 PM",
+    "total": 7.98,
+    "orderNumber": 1,
+    "deliveryInfo": {
+      "address": "Lindi",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Passion juice",
+        "price": "$5.99",
+        "description": "Fresh passion fruit blended with ice and honey",
+        "image": "/images/passion.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 8:17:00 PM",
+    "total": 8.98,
+    "orderNumber": 1,
+    "deliveryInfo": {
+      "address": "Hassan",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mahamri",
+        "price": "$2.99",
+        "description": "Traditional Kenyan sweet bread, perfect with tea",
+        "image": "/images/mahamri.jpg",
+        "category": "Breads",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 8:19:46 PM",
+    "total": 5.98,
+    "orderNumber": 1,
+    "deliveryInfo": {
+      "address": "Hassan",
+      "phone": "0711111111"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mahamri",
+        "price": "$2.99",
+        "description": "Traditional Kenyan sweet bread, perfect with tea",
+        "image": "/images/mahamri.jpg",
+        "category": "Breads",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 8:19:46 PM",
+    "total": 5.98,
+    "deliveryInfo": {
+      "address": "Hassan",
+      "phone": "0711111111"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Passion Fruit Smoothie",
+        "price": "$5.99",
+        "description": "Fresh passion fruit blended with ice and honey",
+        "image": "/images/passion.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      },
+      {
+        "name": "Apple Cider",
+        "price": "$4.99",
+        "description": "Fresh apple juice with cinnamon and ginger",
+        "image": "/images/apple.jpg",
+        "category": "Juices",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:19:53 PM",
+    "total": 13.97,
+    "deliveryInfo": {
+      "address": "Makina",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Lassi",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:20:26 PM",
+    "total": 7.98,
+    "deliveryInfo": {
+      "address": "Lindi",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      },
+      {
+        "name": "Orange Juice",
+        "price": "$3.99",
+        "description": "Freshly squeezed orange juice with a touch of honey",
+        "image": "/images/orange.jpg",
+        "category": "Juices",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:24:39 PM",
+    "total": 11.97,
+    "deliveryInfo": {
+      "address": "Ayany",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:33:27 PM",
+    "total": 7.98,
+    "deliveryInfo": {
+      "address": "Makina",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:50:57 PM",
+    "total": 7.98,
+    "deliveryInfo": {
+      "address": "Makina",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Passion juice",
+        "price": "$5.99",
+        "description": "Fresh passion fruit blended with ice and honey",
+        "image": "/images/passion.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:55:29 PM",
+    "total": 8.98,
+    "deliveryInfo": {
+      "address": "kariakor",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Passion juice",
+        "price": "$5.99",
+        "description": "Fresh passion fruit blended with ice and honey",
+        "image": "/images/passion.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 8:17:00 PM",
+    "total": 8.98,
+    "deliveryInfo": {
+      "address": "Hassan",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Orange Juice",
+        "price": "$3.99",
+        "description": "Freshly squeezed orange juice with a touch of honey",
+        "image": "/images/orange.jpg",
+        "category": "Juices",
+        "quantity": 1
+      },
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 2
+      }
+    ],
+    "timestamp": "5/24/2025, 9:40:20 PM",
+    "total": 13.97,
+    "deliveryInfo": {
+      "address": "Makina",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 9:50:00 PM",
+    "total": 4.99,
+    "deliveryInfo": {
+      "address": "Lindi",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Lassi",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 7:20:26 PM",
+    "total": 7.98,
+    "deliveryInfo": {
+      "address": "Lindi",
+      "phone": "0746510728"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 9:51:51 PM",
+    "total": 4.99,
+    "deliveryInfo": {
+      "address": "Hassan",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mahamri",
+        "price": "$2.99",
+        "description": "Traditional Kenyan sweet bread, perfect with tea",
+        "image": "/images/mahamri.jpg",
+        "category": "Breads",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 9:52:34 PM",
+    "total": 2.99,
+    "deliveryInfo": {
+      "address": "Ayany",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Apple juice",
+        "price": "$4.99",
+        "description": "Fresh apple juice with cinnamon and ginger",
+        "image": "/images/apple.jpg",
+        "category": "Juices",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 9:56:48 PM",
+    "total": 4.99,
+    "deliveryInfo": {
+      "address": "Hassan",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Avocado Smoothie",
+        "price": "$6.99",
+        "description": "Creamy avocado with banana and honey",
+        "image": "/images/avocado.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 9:57:15 PM",
+    "total": 6.99,
+    "deliveryInfo": {
+      "address": "Lindi",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 10:18:06 PM",
+    "total": 4.99,
+    "deliveryInfo": {
+      "address": "Makina",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Passion juice",
+        "price": "$5.99",
+        "description": "Fresh passion fruit blended with ice and honey",
+        "image": "/images/passion.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/24/2025, 10:19:49 PM",
+    "total": 5.99,
+    "deliveryInfo": {
+      "address": "Lindi",
+      "phone": "0746510727"
+    }
+  }
+]
