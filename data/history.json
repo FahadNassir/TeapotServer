@@ -496,5 +496,41 @@
       "address": "Lindi",
       "phone": "0746510727"
     }
+  },
+  {
+    "items": [
+      {
+        "name": "Passion juice",
+        "price": "$5.99",
+        "description": "Fresh passion fruit blended with ice and honey",
+        "image": "/images/passion.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/25/2025, 10:26:18 AM",
+    "total": 5.99,
+    "deliveryInfo": {
+      "address": "Lindi",
+      "phone": "0746510727"
+    }
+  },
+  {
+    "items": [
+      {
+        "name": "Passion juice",
+        "price": "$5.99",
+        "description": "Fresh passion fruit blended with ice and honey",
+        "image": "/images/passion.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/25/2025, 10:27:30 AM",
+    "total": 5.99,
+    "deliveryInfo": {
+      "address": "Makina",
+      "phone": "0746510727"
+    }
   }
 ]
