@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 const path = require('path');
 const { addToHistory } = require('./historyHandlers');
 
@@ -16,7 +16,7 @@ const validateOrder = (order) => {
 };
 
 // POST /order handler
-const createOrder = (req, res) => {
+const createOrder = async (req, res) => {
   const newOrder = req.body;
 
   // Validate order data
@@ -25,50 +25,37 @@ const createOrder = (req, res) => {
     return res.status(400).json({ message: validation.message });
   }
 
-  fs.readFile(ordersFilePath, 'utf8', (err, data) => {
-    if (err) {
-      return res.status(500).json({ message: 'Error reading orders file.' });
-    }
-
-    let orders = [];
-    try {
-      orders = JSON.parse(data);
-    } catch (parseError) {
-      return res.status(500).json({ message: 'Error parsing orders file.' });
-    }
+  try {
+    const data = await fs.readFile(ordersFilePath, 'utf8');
+    let orders = JSON.parse(data);
 
     // Add timestamp
     newOrder.timestamp = new Date().toLocaleString();
     orders.push(newOrder);
 
-    fs.writeFile(ordersFilePath, JSON.stringify(orders, null, 2), (err) => {
-      if (err) {
-        return res.status(500).json({ message: 'Error saving order.' });
-      }
-      res.status(201).json({ 
-        message: 'Order saved successfully.',
-        phone: newOrder.deliveryInfo.phone
-      });
+    await fs.writeFile(ordersFilePath, JSON.stringify(orders, null, 2));
+    res.status(201).json({ 
+      message: 'Order saved successfully.',
+      phone: newOrder.deliveryInfo.phone
     });
-  });
+  } catch (error) {
+    console.error('Error creating order:', error);
+    res.status(500).json({ message: 'Error saving order.' });
+  }
 };
 
 // GET /orders handler
-const getOrders = (req, res) => {
-  fs.readFile(ordersFilePath, 'utf8', (err, data) => {
-    if (err) {
-      return res.status(500).json({ message: 'Error reading orders file.' });
-    }
-
-    try {
-      const orders = JSON.parse(data);
-      // Sort orders by timestamp in descending order (newest first)
-      orders.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-      res.status(200).json(orders);
-    } catch (parseError) {
-      res.status(500).json({ message: 'Error parsing orders file.' });
-    }
-  });
+const getOrders = async (req, res) => {
+  try {
+    const data = await fs.readFile(ordersFilePath, 'utf8');
+    const orders = JSON.parse(data);
+    // Sort orders by timestamp in descending order (newest first)
+    orders.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    res.status(200).json(orders);
+  } catch (error) {
+    console.error('Error getting orders:', error);
+    res.status(500).json({ message: 'Error reading orders.' });
+  }
 };
 
 // DELETE /order/:phone handler
@@ -80,7 +67,7 @@ const deleteOrder = async (req, res) => {
   }
 
   try {
-    const data = await fs.promises.readFile(ordersFilePath, 'utf8');
+    const data = await fs.readFile(ordersFilePath, 'utf8');
     let orders = JSON.parse(data);
     const ordersToDelete = orders.filter(order => order.deliveryInfo.phone === phone);
     
@@ -90,13 +77,18 @@ const deleteOrder = async (req, res) => {
 
     // Save orders to history before deletion
     for (const order of ordersToDelete) {
-      await addToHistory({ body: order }, { status: () => ({ json: () => {} }) });
+      try {
+        await addToHistory(order);
+      } catch (historyError) {
+        console.error('Error saving order to history:', historyError);
+        // Continue with other orders even if one fails
+      }
     }
 
     // Remove the orders from the active orders list
     orders = orders.filter(order => order.deliveryInfo.phone !== phone);
 
-    await fs.promises.writeFile(ordersFilePath, JSON.stringify(orders, null, 2));
+    await fs.writeFile(ordersFilePath, JSON.stringify(orders, null, 2));
     res.status(200).json({ 
       message: 'Orders moved to history successfully.',
       count: ordersToDelete.length

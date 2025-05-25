@@ -26,15 +26,17 @@ async function writeHistory(history) {
 }
 
 // Add an order to history
-async function addToHistory(req, res) {
+async function addToHistory(order) {
     try {
-        const order = req.body;
         if (!order) {
-            return res.status(400).json({ error: 'No order data provided' });
+            throw new Error('No order data provided');
         }
 
         // Read existing history
         const history = await readHistory();
+
+        // Add deletion timestamp
+        order.deletedAt = new Date().toLocaleString();
 
         // Add new order to history
         history.push(order);
@@ -42,10 +44,23 @@ async function addToHistory(req, res) {
         // Write updated history
         await writeHistory(history);
 
-        res.status(201).json({ message: 'Order added to history successfully' });
+        return true;
     } catch (error) {
         console.error('Error adding order to history:', error);
-        res.status(500).json({ error: 'Failed to add order to history' });
+        throw error;
+    }
+}
+
+// Get all order history
+async function getHistory(req, res) {
+    try {
+        const history = await readHistory();
+        // Sort history by deletion timestamp in descending order (newest first)
+        history.sort((a, b) => new Date(b.deletedAt) - new Date(a.deletedAt));
+        res.status(200).json(history);
+    } catch (error) {
+        console.error('Error getting history:', error);
+        res.status(500).json({ error: 'Failed to get order history' });
     }
 }
 
@@ -79,5 +94,6 @@ async function removeFromHistory(req, res) {
 
 module.exports = {
     addToHistory,
+    getHistory,
     removeFromHistory
 };
