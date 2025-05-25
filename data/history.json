@@ -532,5 +532,81 @@
       "address": "Makina",
       "phone": "0746510727"
     }
+  },
+  {
+    "items": [
+      {
+        "name": "Apple juice",
+        "price": "$4.99",
+        "description": "Fresh apple juice with cinnamon and ginger",
+        "image": "/images/apple.jpg",
+        "category": "Juices",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/25/2025, 10:45:58 AM",
+    "total": 4.99,
+    "deliveryInfo": {
+      "address": "Ayany",
+      "phone": "0746510727"
+    },
+    "deletedAt": "5/25/2025, 11:29:21 AM"
+  },
+  {
+    "items": [
+      {
+        "name": "Mango Juice",
+        "price": "$4.99",
+        "description": "Creamy mango smoothie with a hint of cardamom",
+        "image": "/images/mango.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/25/2025, 11:28:16 AM",
+    "total": 4.99,
+    "deliveryInfo": {
+      "address": "Lindi",
+      "phone": "0746510727"
+    },
+    "deletedAt": "5/25/2025, 11:29:21 AM"
+  },
+  {
+    "items": [
+      {
+        "name": "Orange Juice",
+        "price": "$3.99",
+        "description": "Freshly squeezed orange juice with a touch of honey",
+        "image": "/images/orange.jpg",
+        "category": "Juices",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/25/2025, 11:28:54 AM",
+    "total": 3.99,
+    "deliveryInfo": {
+      "address": "Makina",
+      "phone": "0746510727"
+    },
+    "deletedAt": "5/25/2025, 11:29:21 AM"
+  },
+  {
+    "items": [
+      {
+        "name": "Passion juice",
+        "price": "$5.99",
+        "description": "Fresh passion fruit blended with ice and honey",
+        "image": "/images/passion.jpg",
+        "category": "Smoothies",
+        "quantity": 1
+      }
+    ],
+    "timestamp": "5/25/2025, 11:29:05 AM",
+    "total": 5.99,
+    "deliveryInfo": {
+      "address": "Ayany",
+      "phone": "0746510727"
+    },
+    "deletedAt": "5/25/2025, 11:29:21 AM"
   }
 ]
